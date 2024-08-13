@@ -28,10 +28,50 @@
             text-align: justify;
             font-family: Arial, Helvetica, sans-serif;
         }
+        sidebar {
+    width: 200px;
+    height: 100vh; /* Full height of the viewport */
+    position: fixed; /* Stay in place */
+    left: 0;
+    top: 0;
+    background-color: #333;
+    padding-top: 20px;
+}
+
+sidebar ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+sidebar ul li {
+    padding: 10px;
+    text-align: center;
+}
+
+sidebar ul li a {
+    color: white;
+    text-decoration: none;
+    display: block;
+}
+
+sidebar ul li a:hover {
+    background-color: #575757;
+}
+
+content {
+    margin-left: 220px; /* Add margin to account for sidebar width */
+    padding: 20px;
+}
     </style>
 </head>
 <body style="background-color: hwb(34 75% 7%);">
-    
+    <div class="sidebar">
+        <ul>
+            <li><a href="home">Home</a></li>
+            <li><a href="about">About</a></li>
+            <li><a href="contact">Contact</a></li>
+        </ul>
+    </div> 
     <div>
         <h1>Hello, my name is Tolkunay Elebesova. </h1>
         <p>I am Software Development Engineer in Test.</p>
