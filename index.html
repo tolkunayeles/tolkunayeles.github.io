@@ -4,68 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <style>
-        h1{
-            color: green;
-            font-size: 36px;
-            text-align: center;
-            font-family: Arial, Helvetica, sans-serif;
-        }
-        p {font-size: 18px;
-            line-height: 1,5;
-            text-align: justify;
-            font-family: Arial, Helvetica, sans-serif;
-
-        }
-        section {
-            color: rgb(3, 37, 8);
-            font-size: 25px;
-            text-align: justify;
-            font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif ;
-        }
-        ul {
-            line-height: 1,5;
-            text-align: justify;
-            font-family: Arial, Helvetica, sans-serif;
-        }
-        sidebar {
-    width: 200px;
-    height: 100vh; /* Full height of the viewport */
-    position: fixed; /* Stay in place */
-    left: 0;
-    top: 0;
-    background-color: #333;
-    padding-top: 20px;
-}
-
-sidebar ul {
-    list-style-type: none;
-    padding: 0;
-}
-
-sidebar ul li {
-    padding: 10px;
-    text-align: center;
-}
-
-sidebar ul li a {
-    color: white;
-    text-decoration: none;
-    display: block;
-}
-
-sidebar ul li a:hover {
-    background-color: #575757;
-}
-
-content {
-    margin-left: 220px; /* Add margin to account for sidebar width */
-    padding: 20px;
-}
-    </style>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body style="background-color: hwb(34 75% 7%);">
-    <div class="sidebar">
+    <div class="container">
         <ul>
             <li><a href="home">Home</a></li>
             <li><a href="about">About</a></li>
@@ -79,7 +21,7 @@ content {
         
     </div>
 
-    <div>
+    <div class="content">
         <section>Technical Skills</section>
         <ul>JavaScript</ul>
         <ul>HTML</ul>
