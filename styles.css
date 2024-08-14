@@ -21,37 +21,33 @@ ul {
     text-align: justify;
     font-family: Arial, Helvetica, sans-serif;
 }
-.container {
-width: 200px;
-height: 100vh; /* Full height of the viewport */
-position: fixed; /* Stay in place */
-left: 0;
-top: 0;
-background-color: #333;
-padding-top: 20px;
+.topnav {
+    background-color: #333;
+    overflow: hidden;
 }
 
-.container ul {
-list-style-type: none;
-padding: 0;
+.topnav ul {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
 }
 
-.container ul li {
-padding: 10px;
-text-align: center;
+.topnav ul li {
+    float: left;
 }
 
-.container ul li a {
-color: white;
-text-decoration: none;
-display: block;
+.topnav ul li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 20px;
+    text-decoration: none;
 }
 
-.container ul li a:hover {
-background-color: #575757;
+.topnav ul li a:hover {
+    background-color: #575757;
 }
-
-content {
+.content {
 margin-left: 220px; 
 padding: 20px;
 }
