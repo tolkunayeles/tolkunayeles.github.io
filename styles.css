@@ -1,53 +1,95 @@
-h1{
-    color: green;
-    font-size: 36px;
-    text-align: center;
-    font-family: Arial, Helvetica, sans-serif;
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: url('https://example.com/your-background-image.jpg') no-repeat center center fixed;
+    background-size: 50%;
+    color: white;
 }
-p {font-size: 18px;
-    line-height: 1,5;
-    text-align: justify;
-    font-family: Arial, Helvetica, sans-serif;
-
-}
-section {
-    color: rgb(3, 37, 8);
-    font-size: 25px;
-    text-align: justify;
-    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif ;
-}
-ul {
-    line-height: 1,5;
-    text-align: justify;
-    font-family: Arial, Helvetica, sans-serif;
-}
-.topnav {
-    background-color: #333;
+nav {
+    background-color: #f2bb73;
     overflow: hidden;
+    padding: 0.5em 0;
 }
 
-.topnav ul {
+nav ul {
     margin: 0;
     padding: 0;
     list-style-type: none;
-}
-
-.topnav ul li {
-    float: left;
-}
-
-.topnav ul li a {
-    display: block;
-    color: white;
     text-align: center;
-    padding: 14px 20px;
-    text-decoration: none;
 }
 
-.topnav ul li a:hover {
-    background-color: #575757;
+nav ul li {
+    display: inline-block;
+    margin-right: 15px;
 }
+
+nav ul li:last-child {
+    margin-right: 0;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    padding: 14px 20px;
+    display: inline-block;
+    transition: background-color 0.3s;
+}
+
+nav ul li a:hover {
+    background-color: #a55115;
+}
+
+header {
+    text-align: center;
+    padding: 2em;
+    background-color: rgba(95, 55, 25, 0.7);
+}
+
+h1 {
+    font-size: 2.5em;
+    margin: 0;
+}
+
 .content {
-margin-left: 220px; 
-padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 70vh;
 }
+
+.profile {
+    background-color: rgba(95, 55, 25, 0.7);
+    padding: 2em;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.profile img {
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+}
+
+.profile h2 {
+    margin: 1em 0 0.5em 0;
+    font-size: 1.8em;
+}
+
+.profile ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.profile li {
+    margin: 0.5em 0;
+    font-size: 1.1em;
+}
+
+.profile li::before {
+    content: "• ";
+    color: orange;
+}
+
