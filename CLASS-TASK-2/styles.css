@@ -1,0 +1,48 @@
+main {
+  display: flex;
+  gap: 20px;
+}
+section {
+  border: 1px solid gray;
+  width: 70%;
+}
+aside {
+  border: 1px solid gray;
+  width: 30%;
+}
+.movie {
+  width: 250px;
+  height: 350px;
+  border: 1px solid gray;
+  text-align: center;
+}
+.movie-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  
+}
+.add-list {
+  border: 1px solid gray;
+  text-align: center;
+  display: inline-block;
+
+  h3{
+      margin: 0;
+      display: inline-block;
+  }
+}
+.favoritemovie-list {
+  display: flex; 
+  flex-wrap: wrap;
+  gap: 15px;
+}
+img {
+  width: 150px;
+  height: 200px;
+  margin: auto;
+  display: block;
+}
+h3 {
+  margin: 0;
+}
