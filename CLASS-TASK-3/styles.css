@@ -46,6 +46,6 @@ body {
   }
 
   .profile-card .details div span {
-    font-weight: bold;
+    font-weight: Arial, sans-serif;
     color: #333;
   }
