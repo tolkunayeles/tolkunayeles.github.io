@@ -1,0 +1,48 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+}
+.main{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+input{
+    padding: 5px;
+    font-size: 20px;
+}
+
+select{
+    padding: 5px;
+    font-size: 20px;
+}
+.buttons{
+    display: flex;
+    justify-content: space-between;
+}
+.buttons button{
+    font-size: 20px;
+    border: none;
+    border-radius: 10px;
+    background-color: green;
+    color: white;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+.buttons button:hover{
+    background-color: rgb(5, 61, 5);
+}
+.screen {
+    height: 150px;
+    border: 1px solid green;
+    border-radius: 10px;
+}
+h1{
+    text-align: center;
+}
