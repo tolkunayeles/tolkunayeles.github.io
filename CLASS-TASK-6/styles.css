@@ -1,0 +1,35 @@
+body {
+    font-family: Arial, sans-serif;
+    padding: 20px;
+    background-color: #f4f4f4;
+}
+.product-form, .product-list {
+    background-color: white;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+}
+.product-form input, .product-form textarea, .product-form button {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    font-size: 16px;
+}
+.product-list .product-item {
+    display: flex;
+    margin-bottom: 20px;
+}
+.product-list img {
+    max-width: 100px;
+    margin-right: 20px;
+}
+.product-list .product-details {
+    display: flex;
+    flex-direction: column;
+}
+.product-list .product-details h3, .product-list .product-details p {
+    margin: 5px 0;
+}

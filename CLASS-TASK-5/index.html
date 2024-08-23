@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .alert{
+            gap: 20px;
+            background-color: rgb(7, 194, 194);
+            position: fixed;
+            top: 10px;
+            right: 10px;
+            padding: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            border-radius: 10px;
+            display: none;
+        }
+        p{
+            margin: 0;
+        }
+        li{
+            display: flex;
+            align-items: center;
+            margin: 10px 0;
+        }
+    </style>
+</head>
+<body>
+    <h1>Todo List</h1>
+    <div>
+        <input type="text" id="input">
+        <button>Add Todo</button>
+        <button id="save">Save Todo</button>
+    </div>
+
+    <ul></ul>
+
+
+    <div class="alert">
+        <p></p>
+        <span>x</span>
+    </div>
+    <script src="index.js"></script>
+</body>
+</html>
