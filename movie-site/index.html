@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Movie App</title>
+  <link rel="stylesheet" href="styles.css" />
+  
+ 
+</head>
+<body>
+    <header>
+        <h1>Movie App</h1>
+        <form id="search-form">
+          <input
+            type="text"
+            id="search-input"
+            placeholder="Search for movies..."
+          />
+          <button type="submit">Search</i></button>
+        </form>
+        <div class="title">
+          <h2 class="mov-list">Movie List</h2>
+          <h2 class="fav-list">Favorites</h2>
+        </div>
+      </header>
+      <header>
+        
+        
+      </header>
+      <div class="container">
+        <div id="movies" class="movies">
+          <h1>All Movies</h1>
+          <main>
+            <section id="movies" class="movies"></section>
+          </main>
+        </div>
+        
+        <div id="favorites" class="favorites">
+          <!-- <h2>Favorites</h2> -->
+          <ul id="favorites-list">
+            <li data-id="1">Inception <button class="fav-button">Add to Favorites</button></li>
+            <li data-id="2">The Matrix <button class="fav-button">Add to Favorites</button></li>
+            <li data-id="3">Interstellar <button class="fav-button">Add to Favorites</button></li>
+          </ul>
+          
+        </div>
+      </div>
+      
+   
+      
+
+    
+      <!-- Movie Details Modal -->
+      <div id="movie-modal" class="modal">
+        <div class="modal-content">
+          <span class="close-button">&times;</span>
+          <div id="modal-body"></div>
+        </div>
+      </div>
+
+      
+  <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+  <script src="index.js"></script>
+</body>
+</html>
