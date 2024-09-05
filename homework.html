@@ -6,45 +6,63 @@
     <title>Homeworks</title>
     <style>
         body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    background-size: 50%;
-    color: white;
-}
-nav {
-    background-color: #f2bb73;
-    overflow: hidden;
-    padding: 0.5em 0;
-}
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-size: 50%;
+            color: white;
+        }
+        nav {
+            background-color: #f2bb73;
+            overflow: hidden;
+            padding: 0.5em 0;
+        }
+        nav ul {
+            margin: 0;
+            padding: 0;
+            list-style-type: none;
+            text-align: center;
+        }
+        nav ul li {
+            display: inline-block;
+            margin-right: 15px;
+        }
+        nav ul li:last-child {
+            margin-right: 0;
+        }
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            padding: 14px 20px;
+            display: inline-block;
+            transition: background-color 0.3s;
+        }
+        nav ul li a:hover {
+            background-color: #a55115;
+        }
 
-nav ul {
-    margin: 0;
-    padding: 0;
-    list-style-type: none;
-    text-align: center;
-}
+        /* Style the buttons */
+        .button-link {
+            display: flex;
+            background-color: #f2bf73;
+            color: white;
+            padding: 10px 20px;
+            text-align: center;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+            margin: 10px 0;
+            width: 250px; /* Optional: Fixed width for uniform button size */
+        }
 
-nav ul li {
-    display: inline-block;
-    margin-right: 15px;
-}
+        .button-link:hover {
+            background-color: #38973a;
+        }
 
-nav ul li:last-child {
-    margin-right: 0;
-}
-
-nav ul li a {
-    color: white;
-    text-decoration: none;
-    padding: 14px 20px;
-    display: inline-block;
-    transition: background-color 0.3s;
-}
-
-nav ul li a:hover {
-    background-color: #a55115;
-}
+        .link-container {
+            text-align: center;
+            margin: 20px 0;
+        }
     </style>
 </head>
 <body>
@@ -55,28 +73,33 @@ nav ul li a:hover {
             <li><a href="contact.html">Contact</a></li>
         </ul>
     </nav>
-    <div>
-        <a href="CLASS-TASK-1/index.html">Homework-ToDo List</a>
-    </div>
-   
-    <div>
-        <a href="CLASS-TASK-2/index.html">Homework - Movie Card</a>
+
+    <div class="link-container">
+        <a href="CLASS-TASK-1/index.html" class="button-link">Homework - ToDo List</a>
     </div>
 
-    <div>
-        <a href="CLASS-TASK-3/index.html">Homework - Person Card</a>
+    <div class="link-container">
+        <a href="CLASS-TASK-2/index.html" class="button-link">Homework - Movie Card</a>
     </div>
 
-    <div>
-        <a href="Converter/index.html">Homework - Currency Converter</a>
+    <div class="link-container">
+        <a href="CLASS-TASK-3/index.html" class="button-link">Homework - Person Card</a>
     </div>
 
-    <div>
-        <a href="CLASS-TASK-6/products.html">Homework - Product List</a>
+    <div class="link-container">
+        <a href="Converter/index.html" class="button-link">Homework - Currency Converter</a>
     </div>
 
-    <div>
-        <a href="movie-site/index.html">Homework - Movie Web App</a>
+    <div class="link-container">
+        <a href="CLASS-TASK-6/products.html" class="button-link">Homework - Product List</a>
+    </div>
+
+    <div class="link-container">
+        <a href="movie-site/index.html" class="button-link">Homework - Movie Web App</a>
+    </div>
+
+    <div class="link-container">
+        <a href="onlinestore/product.html" class="button-link">Homework - Online Store</a>
     </div>
 </body>
 </html>

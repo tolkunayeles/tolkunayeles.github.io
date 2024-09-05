@@ -39,7 +39,7 @@ function displayMovies(movies) {
             <div class="movie-info">
                 <h3>${title}</h3>
                 <span class="${getColor(vote_average)}">${vote_average.toFixed(1)}</span>
-                <button onclick="addToFavorites(${id}, '${title}')">Add to Favorites</button>
+                <button onclick="addToFavorites(${id}, '${title}', '${poster_path}')">Add to Favorites</button>
             </div>
         `;
 
@@ -83,50 +83,20 @@ async function searchMovies(query) {
     }
 }
 
-async function openModal(movieId) {
-    try {
-        const res = await fetch(
-            `${movieDetailsUrl}${movieId}?api_key=${apiKey}&language=en-US&append_to_response=videos,credits`
-        );
-        const movie = await res.json();
-
-        modalContent.innerHTML = `
-            <img src="${movie.poster_path ? imageBaseUrl + movie.poster_path : 'https://via.placeholder.com/500x750'}" alt="${movie.title}">
-            <div class="details">
-                <h2>${movie.title}</h2>
-                <p>${movie.overview}</p>
-                <p><strong>Release Date:</strong> ${movie.release_date}</p>
-                <p><strong>Runtime:</strong> ${movie.runtime} minutes</p>
-                <p><strong>Genres:</strong> ${movie.genres.map((genre) => genre.name).join(", ")}</p>
-                <p><strong>Cast:</strong> ${movie.credits.cast.slice(0, 5).map((actor) => actor.name).join(", ")}</p>
-            </div>
-        `;
-
-        modal.style.display = "block";
-    } catch (error) {
-        console.error("Error fetching movie details:", error);
-    }
+function openModal(movieId) {
+    window.location.href = `movie.html?id=${movieId}`;
 }
 
-closeBtn.addEventListener("click", () => {
-    modal.style.display = "none";
-});
 
-window.addEventListener("click", (e) => {
-    if (e.target === modal) {
-        modal.style.display = "none";
-    }
-});
-
-function addToFavorites(id, title) {
+function addToFavorites(id, title, poster_path) {
     // Check if the movie is already in favorites
     if (favorites.some(movie => movie.id === id)) {
         alert(`${title} is already in your favorites!`);
         return;
     }
 
-    // Add the new movie to the favorites list
-    favorites.push({ id, title });
+    // Add the new movie to the favorites list with the poster image
+    favorites.push({ id, title, poster_path });
 
     // Save back to localStorage
     localStorage.setItem('favorites', JSON.stringify(favorites));
@@ -141,7 +111,8 @@ function displayFavorites() {
     favorites.forEach(movie => {
         const favoriteElement = document.createElement('li');
         favoriteElement.innerHTML = `
-            ${movie.title}
+            <img src="${imageBaseUrl + movie.poster_path}" alt="${movie.title}" width="100">
+            <span>${movie.title}</span>
             <button onclick="removeFromFavorites(${movie.id})">Remove</button>
         `;
         favoritesList.appendChild(favoriteElement);
