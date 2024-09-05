@@ -43,7 +43,9 @@ header div {
   text-decoration: none;
   font-size: 17px;
   display: flex;
-  gap: 700px;
+  justify-content: space-between;
+  margin-left: 300px;
+  margin-right: 100px;
 }
 
 #search-form {
