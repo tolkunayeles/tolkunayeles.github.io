@@ -26,10 +26,39 @@ body {
     max-width: 100px;
     margin-right: 20px;
 }
-.product-list .product-details {
+.product-details {
     display: flex;
     flex-direction: column;
 }
-.product-list .product-details h3, .product-list .product-details p {
-    margin: 5px 0;
+
+.product-list .product-details .buttons {
+    display: flex;
+    gap: 10px; /* Add space between the buttons */
+    margin-top: 10px;
+}
+
+.delete-button, .edit-button {
+    flex: 1; /* Make both buttons have equal width */
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+}
+
+.delete-button {
+    background-color: #ff0000;
+    color: white;
+}
+
+.delete-button:hover {
+    background-color: #cc0000;
+}
+
+.edit-button {
+    background-color: #007bff; /* Blue background */
+    color: white;
+}
+
+.edit-button:hover {
+    background-color: #0056b3; /* Darker blue on hover */
 }

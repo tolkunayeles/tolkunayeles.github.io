@@ -134,3 +134,22 @@ body.showCart .container{
 .listCart::-webkit-scrollbar{
     width: 0;
 }
+.add-product-container {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.add-button {
+    background-color: #007bff;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 16px;
+    display: inline-block;
+    transition: background-color 0.3s ease;
+}
+
+.add-button:hover {
+    background-color: #0056b3;
+}

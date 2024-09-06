@@ -35,11 +35,13 @@ function displayMovies(movies) {
         const movieEl = document.createElement("div");
         movieEl.classList.add("movie");
         movieEl.innerHTML = `
-            <img src="${poster_path ? imageBaseUrl + poster_path : 'https://via.placeholder.com/500x750'}" alt="${title}">
+            <div class="movie-poster">
+                <img src="${poster_path ? imageBaseUrl + poster_path : 'https://via.placeholder.com/500x750'}" alt="${title}">
+                <span class="vote-rate ${getColor(vote_average)}">${vote_average.toFixed(1)}</span>
+            </div>
             <div class="movie-info">
                 <h3>${title}</h3>
-                <span class="${getColor(vote_average)}">${vote_average.toFixed(1)}</span>
-                <button onclick="addToFavorites(${id}, '${title}', '${poster_path}')">Add to Favorites</button>
+                <button class="fav-button" onclick="addToFavorites(${id}, '${title}', '${poster_path}')">Add to Favorites</button>
             </div>
         `;
 
